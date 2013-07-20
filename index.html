@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Nest-dashing-widget by Eric-Gonzalez</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Nest-dashing-widget</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/Eric-Gonzalez/nest-dashing-widget">View the Project on GitHub <small>Eric-Gonzalez/nest-dashing-widget</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Eric-Gonzalez/nest-dashing-widget/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Eric-Gonzalez/nest-dashing-widget/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Eric-Gonzalez/nest-dashing-widget">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="nest-dashing-widget-" class="anchor" href="#nest-dashing-widget-"><span class="octicon octicon-link"></span></a>Nest Dashing Widget </h1>
+
+<p>Nest widget for <a href="http://shopify.github.com/dashing">Dashing</a></p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p>Add the <code>nest_thermostat</code> to the Gemfile of your Dashing dashboard:</p>
+
+<div class="highlight"><pre><span class="n">gem</span> <span class="s1">'nest_thermostat'</span>
+</pre></div>
+
+<p>and run <code>bundle install</code>.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To login to your nest account setup both the <code>NEST_USER</code> and <code>NEST_PASSWORD</code> environment variables</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>To use this widget, copy <code>nest.coffee</code>, <code>nest.html</code> and <code>nest.scss</code> into the <code>/widgets/nest</code> directory of your dashboard. Copy <code>nest_logo.png</code> and <code>nest_leaf.png</code> into the <code>/assets/images</code> directory and put the <code>nest.rb</code> file in your <code>/jobs</code> folder.</p>
+
+<p>To include the widget on your dashboard, add the following snippet to the dashboard layout file:</p>
+
+<div class="highlight"><pre>  <span class="o">&lt;</span><span class="n">li</span> <span class="n">data</span><span class="o">-</span><span class="n">row</span><span class="o">=</span><span class="s2">"1"</span> <span class="n">data</span><span class="o">-</span><span class="n">col</span><span class="o">=</span><span class="s2">"1"</span> <span class="n">data</span><span class="o">-</span><span class="n">sizex</span><span class="o">=</span><span class="s2">"1"</span> <span class="n">data</span><span class="o">-</span><span class="n">sizey</span><span class="o">=</span><span class="s2">"1"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">div</span> <span class="n">data</span><span class="o">-</span><span class="nb">id</span><span class="o">=</span><span class="s2">"nest"</span> <span class="n">data</span><span class="o">-</span><span class="n">view</span><span class="o">=</span><span class="s2">"Nest"</span> <span class="n">data</span><span class="o">-</span><span class="n">title</span><span class="o">=</span><span class="s2">"Nest Temp"</span><span class="o">&gt;&lt;</span><span class="sr">/div&gt;</span>
+<span class="sr">  &lt;/</span><span class="n">li</span><span class="o">&gt;</span>  
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Eric-Gonzalez">Eric-Gonzalez</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
