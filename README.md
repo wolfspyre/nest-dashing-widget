@@ -3,6 +3,10 @@ Nest Dashing Widget
 
 Nest widget for [Dashing](http://shopify.github.com/dashing)
  
+## Preview 
+![](https://dl.dropboxusercontent.com/u/2138838/Github/nest_widget/screen_1.png)
+![](https://dl.dropboxusercontent.com/u/2138838/Github/nest_widget/screen_2.png) 
+ 
 ## Dependencies
 
 Add the `nest_thermostat` to the Gemfile of your Dashing dashboard:
