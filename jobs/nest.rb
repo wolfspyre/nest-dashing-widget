@@ -3,7 +3,7 @@ require 'nest_thermostat'
 nest_user = ENV['NEST_USER']
 nest_password = ENV['NEST_PASSWORD']
 
-SCHEDULER.every '5m', :first_in => 0 do |job|
+SCHEDULER.every '1m', :first_in => 0 do |job|
 	nest = NestThermostat::Nest.new({email: nest_user,password: nest_password})
 	first_nest = nest.status["shared"][nest.device_id]
 	temp = nest.temperature; 
@@ -19,6 +19,8 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
 	
 	if(nest.leaf)
 		leaf_src = "assets/nest_leaf.png"
+	else
+		leaf_src = "assets/nest_leaf_trans.png"
 	end
 
 	send_event('nest', { temp: temp.to_i , state: state, away: away, leaf: leaf_src })
